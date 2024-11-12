@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -17,4 +17,32 @@
 
 .optionText {
   font-size: 16px;
+} */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f0f0f0; /* Сірий фон */
+  border-radius: 20px; /* Закруглені краї */
+  padding: 5px 10px; /* Відступи всередині кнопки */
+  white-space: nowrap; /* Запобігання переносу тексту */
+  fill: none; /* Видаляє будь-яку заливку */
+  stroke: black;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.optionText {
+  font-size: 14px;
+  color: #333; /* Темний текст */
 }

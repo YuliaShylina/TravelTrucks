@@ -13,9 +13,11 @@ export default function TruckTitle() {
           <h2 className={css.name}>{data.name}</h2>
           <div className={css.rating}>
             <span className={css.text}>
-              <svg width={20} height={20}>
-                <use href={`${sprite}#icon-rating-1 `} />
-              </svg>
+              <div className={css.star}>
+                <svg width={20} height={20}>
+                  <use href={`${sprite}#icon-rating-1 `} />
+                </svg>
+              </div>
               <span className={css.reviews}>{`${data.rating}(${
                 data.reviews ? data.reviews.length : null
               } Reviews)`}</span>

@@ -1,28 +1,16 @@
 .container {
-  /* background-image: url('/src/assets/Picture.png');
+  background-image: url("/src/assets/img/hero-image.png");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: cover;
-  background-position: top left; */
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    url("/src/assets/img/hero-image.png") lightgray 0px -192.086px / 100% 138.099%
-      no-repeat;
+  height: 100%;
   padding: 260px 64px;
 }
 
 @media only screen and (min-resolution: 2dppx) {
-  .container {
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.2) 100%
-      ),
-      url("/src/assets/img/hero-image-2x.png") lightgray 0px -192.086px / 100% 138.099%
-        no-repeat;
-  }
+  /* .container {
+    background-image: url("/src/assets/img/hero-image-2x.png");
+  } */
 }
 
 .title {
@@ -45,7 +33,7 @@
   margin-bottom: 40px;
 }
 
-.btn {
+.button {
   text-decoration: none;
   display: flex;
   width: 173px;
@@ -64,6 +52,6 @@
   transition: background 0.3s ease-in-out;
 }
 
-.btn:hover {
+.button:hover {
   background: var(--Button-Hover, #d84343);
 }

@@ -51,7 +51,7 @@ export default function LocationFilter() {
 
       {location && (
         <button className={css.clearButton} onClick={clearLocation}>
-          &#10005;
+          Clear location
         </button>
       )}
 
